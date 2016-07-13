@@ -1,6 +1,6 @@
 Simple webapplication authors and books app (one to many)<br>
 Java Spring MVC<br>
-Hibernate ORM<br>
+Hibernate ORM and postgres for DB<br>
 Full annotations<br>
 Ember for the web side<br>
 
