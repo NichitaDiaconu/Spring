@@ -17,5 +17,5 @@ Set up:<br>
 3. npm install<br>
 4. npm install -g bower<br>
 5. bower install<br>
-6. Check images for configurations
+6. Check images for configurations<br>
 7. Set up a server, personaly used tomcat
