@@ -4,6 +4,10 @@ Hibernate ORM<br>
 Full annotations<br>
 Ember for the web side<br>
 
+Features implemented: <br>
+Viewing authors and their nr ob books.<br>
+Viewing each author's books.<br>
+Adding/Deleteing authors<br>
 
 Using Intellij<br>
 Ember assumed installed<br>
