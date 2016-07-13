@@ -1,0 +1,9 @@
+<h3>The list of authors</h3>
+
+<br/>
+<p> {{#link-to "authors.new" }} Add Author {{/link-to}} </p>
+<br/>
+
+{{authors-list title="List of authors:" entities=model onDelete=(action "deleteAuthor")}}
+
+{{outlet}}

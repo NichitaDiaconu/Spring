@@ -1,0 +1,8 @@
+
+{{#each entities as |author|}}
+    <p> {{#link-to "authorbooks" author.id}}{{author.name}} {{author.nrBooks}} {{/link-to}}
+        <button {{action "onDeleteButtonClick" author.id}} > Delete  </button>
+    </p>
+{{/each}}
+
+{{yield}}

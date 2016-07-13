@@ -1,0 +1,10 @@
+
+{{#each entities as |book|}}
+    <p>
+        {{#link-to "bookdetails" book.id}}
+        Title: {{book.title}}; Isbn: {{book.isbn}}; Author:{{book.author.name}}
+        {{/link-to}}
+    </p>
+{{/each}}
+
+{{yield}}

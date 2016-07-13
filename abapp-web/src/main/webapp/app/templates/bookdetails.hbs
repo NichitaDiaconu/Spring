@@ -1,0 +1,47 @@
+<h2> Book details </h2>
+
+
+<div id="bookdetails">
+
+    <label>Title: </label>
+    <input type="text" id="title" name="title" value="{{model.book.title}}"
+           onblur={{action "onInputBlur"}}/> <br/>
+
+    <label>Isbn: </label>
+    <input type="text" id="isbn" name="isbn" value="{{model.book.isbn}}" onblur={{action "onInputBlur"}}/> <br/>
+
+    <label>Year: </label>
+    <input type="text" id="year" name="year" value="{{model.book.year}}" onblur={{action "onInputBlur"}}/> <br/>
+
+    <table>
+        <tr>
+            <td>
+                <label>Author: </label><br/>
+                <select id="author" name="author">
+                      <option value="{{model.book.author.id}}">{{model.book.author.name}}</option>
+                </select>
+            </td>
+            <td>
+                <label>Available authors: </label><br/>
+                <select id="availableAuthors" name="availableAuthors">
+                  {{#each model.authors as |author|}}
+                      <option value="{{author.id}}">{{author.name}}</option>
+                  {{/each}}
+                </select>
+                <button {{action "onChangeAuthorButtonClick"}}>Change author</button>
+            </td>
+        </tr>
+    </table>
+
+
+    <br/>
+
+
+
+    <button {{action "onUpdateButtonClick" model.book}}> Update</button>
+
+</div>
+
+
+
+{{outlet}}

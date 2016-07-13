@@ -1,0 +1,15 @@
+
+<h3>Author's books are: </h3>
+
+
+<p>Author name: {{model.author.name}}; Nr of books: {{model.author.nrBooks}}</p>
+
+{{#each model.author.books as |book|}}
+    <option value="{{book.id}}">Title: {{book.title}}; Isbn: {{book.isbn}}; Year: {{book.year}}</option>
+{{/each}}
+
+<br/>
+
+
+
+{{outlet}}
